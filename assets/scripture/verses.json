@@ -1,0 +1,250 @@
+{
+  "translation": {
+    "id": "kjv",
+    "name": "King James Version"
+  },
+  "license": "Public Domain",
+  "source": "github.com/seven1m/open-bibles eng-kjv.osis.xml (the data bible-api.com serves)",
+  "verses": [
+    {
+      "reference": "John 3:16",
+      "text": "For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life."
+    },
+    {
+      "reference": "John 14:1",
+      "text": "Let not your heart be troubled: ye believe in God, believe also in me."
+    },
+    {
+      "reference": "John 14:27",
+      "text": "Peace I leave with you, my peace I give unto you: not as the world giveth, give I unto you. Let not your heart be troubled, neither let it be afraid."
+    },
+    {
+      "reference": "John 16:33",
+      "text": "These things I have spoken unto you, that in me ye might have peace. In the world ye shall have tribulation: but be of good cheer; I have overcome the world."
+    },
+    {
+      "reference": "John 8:12",
+      "text": "Then spake Jesus again unto them, saying, I am the light of the world: he that followeth me shall not walk in darkness, but shall have the light of life."
+    },
+    {
+      "reference": "John 15:5",
+      "text": "I am the vine, ye are the branches: He that abideth in me, and I in him, the same bringeth forth much fruit: for without me ye can do nothing."
+    },
+    {
+      "reference": "John 11:25-26",
+      "text": "Jesus said unto her, I am the resurrection, and the life: he that believeth in me, though he were dead, yet shall he live: And whosoever liveth and believeth in me shall never die. Believest thou this?"
+    },
+    {
+      "reference": "Matthew 11:28",
+      "text": "Come unto me, all ye that labour and are heavy laden, and I will give you rest."
+    },
+    {
+      "reference": "Matthew 6:33",
+      "text": "But seek ye first the kingdom of God, and his righteousness; and all these things shall be added unto you."
+    },
+    {
+      "reference": "John 10:27-28",
+      "text": "My sheep hear my voice, and I know them, and they follow me: And I give unto them eternal life; and they shall never perish, neither shall any man pluck them out of my hand."
+    },
+    {
+      "reference": "Matthew 7:7-8",
+      "text": "Ask, and it shall be given you; seek, and ye shall find; knock, and it shall be opened unto you: For every one that asketh receiveth; and he that seeketh findeth; and to him that knocketh it shall be opened."
+    },
+    {
+      "reference": "Matthew 5:16",
+      "text": "Let your light so shine before men, that they may see your good works, and glorify your Father which is in heaven."
+    },
+    {
+      "reference": "Mark 10:27",
+      "text": "And Jesus looking upon them saith, With men it is impossible, but not with God: for with God all things are possible."
+    },
+    {
+      "reference": "Mark 11:24",
+      "text": "Therefore I say unto you, What things soever ye desire, when ye pray, believe that ye receive them, and ye shall have them."
+    },
+    {
+      "reference": "Luke 1:37",
+      "text": "For with God nothing shall be impossible."
+    },
+    {
+      "reference": "Luke 12:32",
+      "text": "Fear not, little flock; for it is your Father’s good pleasure to give you the kingdom."
+    },
+    {
+      "reference": "Acts 1:8",
+      "text": "But ye shall receive power, after that the Holy Ghost is come upon you: and ye shall be witnesses unto me both in Jerusalem, and in all Judaea, and in Samaria, and unto the uttermost part of the earth."
+    },
+    {
+      "reference": "Romans 8:28",
+      "text": "And we know that all things work together for good to them that love God, to them who are the called according to his purpose."
+    },
+    {
+      "reference": "Romans 8:31",
+      "text": "What shall we then say to these things? If God be for us, who can be against us?"
+    },
+    {
+      "reference": "Romans 8:38-39",
+      "text": "For I am persuaded, that neither death, nor life, nor angels, nor principalities, nor powers, nor things present, nor things to come, Nor height, nor depth, nor any other creature, shall be able to separate us from the love of God, which is in Christ Jesus our Lord."
+    },
+    {
+      "reference": "Romans 15:13",
+      "text": "Now the God of hope fill you with all joy and peace in believing, that ye may abound in hope, through the power of the Holy Ghost."
+    },
+    {
+      "reference": "Romans 5:8",
+      "text": "But God commendeth his love toward us, in that, while we were yet sinners, Christ died for us."
+    },
+    {
+      "reference": "Romans 12:21",
+      "text": "Be not overcome of evil, but overcome evil with good."
+    },
+    {
+      "reference": "Romans 10:13",
+      "text": "For whosoever shall call upon the name of the Lord shall be saved."
+    },
+    {
+      "reference": "1 Corinthians 10:13",
+      "text": "There hath no temptation taken you but such as is common to man: but God is faithful, who will not suffer you to be tempted above that ye are able; but will with the temptation also make a way to escape, that ye may be able to bear it."
+    },
+    {
+      "reference": "1 Corinthians 16:13-14",
+      "text": "Watch ye, stand fast in the faith, quit you like men, be strong. Let all your things be done with charity."
+    },
+    {
+      "reference": "1 Corinthians 13:13",
+      "text": "And now abideth faith, hope, charity, these three; but the greatest of these is charity."
+    },
+    {
+      "reference": "1 Corinthians 15:58",
+      "text": "Therefore, my beloved brethren, be ye stedfast, unmovable, always abounding in the work of the Lord, forasmuch as ye know that your labour is not in vain in the Lord."
+    },
+    {
+      "reference": "2 Corinthians 4:16",
+      "text": "For which cause we faint not; but though our outward man perish, yet the inward man is renewed day by day."
+    },
+    {
+      "reference": "2 Corinthians 5:17",
+      "text": "Therefore if any man be in Christ, he is a new creature: old things are passed away; behold, all things are become new."
+    },
+    {
+      "reference": "2 Corinthians 12:9",
+      "text": "And he said unto me, My grace is sufficient for thee: for my strength is made perfect in weakness. Most gladly therefore will I rather glory in my infirmities, that the power of Christ may rest upon me."
+    },
+    {
+      "reference": "John 6:35",
+      "text": "And Jesus said unto them, I am the bread of life: he that cometh to me shall never hunger; and he that believeth on me shall never thirst."
+    },
+    {
+      "reference": "Galatians 6:9",
+      "text": "And let us not be weary in well doing: for in due season we shall reap, if we faint not."
+    },
+    {
+      "reference": "Ephesians 2:8-9",
+      "text": "For by grace are ye saved through faith; and that not of yourselves: it is the gift of God: Not of works, lest any man should boast."
+    },
+    {
+      "reference": "Ephesians 3:20-21",
+      "text": "Now unto him that is able to do exceeding abundantly above all that we ask or think, according to the power that worketh in us, Unto him be glory in the church by Christ Jesus throughout all ages, world without end. Amen."
+    },
+    {
+      "reference": "Ephesians 6:10",
+      "text": "Finally, my brethren, be strong in the Lord, and in the power of his might."
+    },
+    {
+      "reference": "Philippians 4:6-7",
+      "text": "Be careful for nothing; but in every thing by prayer and supplication with thanksgiving let your requests be made known unto God. And the peace of God, which passeth all understanding, shall keep your hearts and minds through Christ Jesus."
+    },
+    {
+      "reference": "Philippians 4:13",
+      "text": "I can do all things through Christ which strengtheneth me."
+    },
+    {
+      "reference": "Philippians 4:19",
+      "text": "But my God shall supply all your need according to his riches in glory by Christ Jesus."
+    },
+    {
+      "reference": "Philippians 1:6",
+      "text": "Being confident of this very thing, that he which hath begun a good work in you will perform it until the day of Jesus Christ:"
+    },
+    {
+      "reference": "Colossians 3:23-24",
+      "text": "And whatsoever ye do, do it heartily, as to the Lord, and not unto men; Knowing that of the Lord ye shall receive the reward of the inheritance: for ye serve the Lord Christ."
+    },
+    {
+      "reference": "Colossians 3:15",
+      "text": "And let the peace of God rule in your hearts, to the which also ye are called in one body; and be ye thankful."
+    },
+    {
+      "reference": "1 Thessalonians 5:16-18",
+      "text": "Rejoice evermore. Pray without ceasing. In every thing give thanks: for this is the will of God in Christ Jesus concerning you."
+    },
+    {
+      "reference": "2 Thessalonians 3:3",
+      "text": "But the Lord is faithful, who shall stablish you, and keep you from evil."
+    },
+    {
+      "reference": "2 Timothy 1:7",
+      "text": "For God hath not given us the spirit of fear; but of power, and of love, and of a sound mind."
+    },
+    {
+      "reference": "Hebrews 4:16",
+      "text": "Let us therefore come boldly unto the throne of grace, that we may obtain mercy, and find grace to help in time of need."
+    },
+    {
+      "reference": "Hebrews 10:23",
+      "text": "Let us hold fast the profession of our faith without wavering; (for he is faithful that promised;)"
+    },
+    {
+      "reference": "Hebrews 11:1",
+      "text": "Now faith is the substance of things hoped for, the evidence of things not seen."
+    },
+    {
+      "reference": "Hebrews 13:8",
+      "text": "Jesus Christ the same yesterday, and to day, and for ever."
+    },
+    {
+      "reference": "James 1:2-3",
+      "text": "My brethren, count it all joy when ye fall into divers temptations; Knowing this, that the trying of your faith worketh patience."
+    },
+    {
+      "reference": "James 1:5",
+      "text": "If any of you lack wisdom, let him ask of God, that giveth to all men liberally, and upbraideth not; and it shall be given him."
+    },
+    {
+      "reference": "James 1:12",
+      "text": "Blessed is the man that endureth temptation: for when he is tried, he shall receive the crown of life, which the Lord hath promised to them that love him."
+    },
+    {
+      "reference": "1 Peter 5:7",
+      "text": "Casting all your care upon him; for he careth for you."
+    },
+    {
+      "reference": "1 Peter 5:10",
+      "text": "But the God of all grace, who hath called us unto his eternal glory by Christ Jesus, after that ye have suffered a while, make you perfect, stablish, strengthen, settle you."
+    },
+    {
+      "reference": "1 John 4:18",
+      "text": "There is no fear in love; but perfect love casteth out fear: because fear hath torment. He that feareth is not made perfect in love."
+    },
+    {
+      "reference": "1 John 1:9",
+      "text": "If we confess our sins, he is faithful and just to forgive us our sins, and to cleanse us from all unrighteousness."
+    },
+    {
+      "reference": "1 John 4:19",
+      "text": "We love him, because he first loved us."
+    },
+    {
+      "reference": "1 John 5:14-15",
+      "text": "And this is the confidence that we have in him, that, if we ask any thing according to his will, he heareth us: And if we know that he hear us, whatsoever we ask, we know that we have the petitions that we desired of him."
+    },
+    {
+      "reference": "Revelation 21:4",
+      "text": "And God shall wipe away all tears from their eyes; and there shall be no more death, neither sorrow, nor crying, neither shall there be any more pain: for the former things are passed away."
+    },
+    {
+      "reference": "Revelation 3:20",
+      "text": "Behold, I stand at the door, and knock: if any man hear my voice, and open the door, I will come in to him, and will sup with him, and he with me."
+    }
+  ]
+}
