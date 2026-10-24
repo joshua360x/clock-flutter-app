@@ -1,0 +1,109 @@
+{
+  "description": "Shared cases for the per-prayer scheduling rule. Run by test/prayer_times/next_ring_cases_test.dart and by the native engine's JVM tests. Rule: the first fetched instant strictly after now; otherwise the next occurrence of the fallback wall-clock time in the zone, stepping by calendar day (never +24h). Times skipped by a DST gap shift forward by the gap; repeated times use the first occurrence. All instants are UTC.",
+  "cases": [
+    {
+      "name": "first fetched time after now",
+      "zone": "America/New_York",
+      "now": "2026-10-25T12:00:00Z",
+      "fetched": ["2026-10-25T09:41:00Z", "2026-10-26T09:42:00Z", "2026-10-27T09:43:00Z"],
+      "fallback": "05:43",
+      "expected": "2026-10-26T09:42:00Z"
+    },
+    {
+      "name": "fetched time equal to now is skipped",
+      "zone": "America/New_York",
+      "now": "2026-10-26T09:42:00Z",
+      "fetched": ["2026-10-25T09:41:00Z", "2026-10-26T09:42:00Z", "2026-10-27T09:43:00Z"],
+      "fallback": "05:43",
+      "expected": "2026-10-27T09:43:00Z"
+    },
+    {
+      "name": "fetched times unsorted",
+      "zone": "America/New_York",
+      "now": "2026-10-25T12:00:00Z",
+      "fetched": ["2026-10-27T09:43:00Z", "2026-10-26T09:42:00Z", "2026-10-25T09:41:00Z"],
+      "fallback": "05:43",
+      "expected": "2026-10-26T09:42:00Z"
+    },
+    {
+      "name": "fetched times used as-is across spring-forward",
+      "zone": "America/New_York",
+      "now": "2026-03-07T12:00:00Z",
+      "fetched": ["2026-03-07T10:58:00Z", "2026-03-08T10:57:00Z"],
+      "fallback": "06:57",
+      "expected": "2026-03-08T10:57:00Z"
+    },
+    {
+      "name": "fetched times exhausted, fallback still ahead today",
+      "zone": "America/New_York",
+      "now": "2026-10-27T08:00:00Z",
+      "fetched": ["2026-10-26T09:42:00Z"],
+      "fallback": "05:42",
+      "expected": "2026-10-27T09:42:00Z"
+    },
+    {
+      "name": "fetched times exhausted, fallback passed today rolls to tomorrow",
+      "zone": "America/New_York",
+      "now": "2026-10-27T12:00:00Z",
+      "fetched": ["2026-10-27T09:43:00Z"],
+      "fallback": "05:43",
+      "expected": "2026-10-28T09:43:00Z"
+    },
+    {
+      "name": "nothing fetched, default 06:00 across spring-forward",
+      "zone": "America/New_York",
+      "now": "2026-03-08T02:00:00Z",
+      "fetched": [],
+      "fallback": "06:00",
+      "expected": "2026-03-08T10:00:00Z"
+    },
+    {
+      "name": "nothing fetched, default 06:00 across fall-back",
+      "zone": "America/New_York",
+      "now": "2026-11-01T01:00:00Z",
+      "fetched": [],
+      "fallback": "06:00",
+      "expected": "2026-11-01T11:00:00Z"
+    },
+    {
+      "name": "time skipped by spring-forward gap moves forward by the gap",
+      "zone": "America/New_York",
+      "now": "2026-03-08T04:00:00Z",
+      "fetched": [],
+      "fallback": "02:30",
+      "expected": "2026-03-08T07:30:00Z"
+    },
+    {
+      "name": "time repeated by fall-back uses the first occurrence",
+      "zone": "America/New_York",
+      "now": "2026-11-01T03:00:00Z",
+      "fetched": [],
+      "fallback": "01:30",
+      "expected": "2026-11-01T05:30:00Z"
+    },
+    {
+      "name": "Europe/London spring-forward",
+      "zone": "Europe/London",
+      "now": "2026-03-28T22:00:00Z",
+      "fetched": [],
+      "fallback": "06:00",
+      "expected": "2026-03-29T05:00:00Z"
+    },
+    {
+      "name": "month boundary",
+      "zone": "America/New_York",
+      "now": "2026-09-30T23:00:00Z",
+      "fetched": [],
+      "fallback": "05:30",
+      "expected": "2026-10-01T09:30:00Z"
+    },
+    {
+      "name": "year boundary",
+      "zone": "America/New_York",
+      "now": "2027-01-01T04:30:00Z",
+      "fetched": [],
+      "fallback": "06:00",
+      "expected": "2027-01-01T11:00:00Z"
+    }
+  ]
+}

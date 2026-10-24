@@ -1,0 +1,116 @@
+{
+  "code": 200,
+  "status": "OK",
+  "data": [
+    {
+      "timings": {
+        "Fajr": "2026-03-07T05:58:00-05:00",
+        "Sunrise": "2026-03-07T06:24:00-05:00",
+        "Dhuhr": "2026-03-07T12:13:00-05:00",
+        "Asr": "2026-03-07T15:25:00-05:00",
+        "Sunset": "2026-03-07T18:01:00-05:00",
+        "Maghrib": "2026-03-07T18:01:00-05:00",
+        "Isha": "2026-03-07T19:20:00-05:00",
+        "Imsak": "2026-03-07T05:48:00-05:00",
+        "Midnight": "2026-03-08T00:13:00-05:00",
+        "Firstthird": "2026-03-07T22:09:00-05:00",
+        "Lastthird": "2026-03-08T02:17:00-05:00"
+      },
+      "date": {
+        "readable": "07 Mar 2026",
+        "timestamp": "1772877600",
+        "gregorian": {
+          "date": "07-03-2026",
+          "format": "DD-MM-YYYY",
+          "day": "07",
+          "weekday": {"en": "Saturday"},
+          "month": {"number": 3, "en": "March"},
+          "year": "2026",
+          "designation": {"abbreviated": "AD", "expanded": "Anno Domini"}
+        },
+        "hijri": {
+          "date": "18-09-1447",
+          "format": "DD-MM-YYYY",
+          "day": "18",
+          "weekday": {"en": "Al Sabt", "ar": "السبت"},
+          "month": {"number": 9, "en": "Ramaḍān", "ar": "رَمَضان", "days": 30},
+          "year": "1447",
+          "designation": {"abbreviated": "AH", "expanded": "Anno Hegirae"},
+          "holidays": [],
+          "adjustedHolidays": [],
+          "method": "UAQ"
+        }
+      },
+      "meta": {
+        "latitude": 40.7128,
+        "longitude": -74.006,
+        "timezone": "America/New_York",
+        "method": {
+          "id": 2,
+          "name": "Islamic Society of North America (ISNA)",
+          "params": {"Fajr": 15, "Isha": 15},
+          "location": {"latitude": 39.70421229, "longitude": -86.39943367}
+        },
+        "latitudeAdjustmentMethod": "ANGLE_BASED",
+        "midnightMode": "STANDARD",
+        "school": "STANDARD",
+        "offset": {"Imsak": 0, "Fajr": 0, "Sunrise": 0, "Dhuhr": 0, "Asr": 0, "Sunset": 0, "Maghrib": 0, "Isha": 0, "Midnight": 0}
+      }
+    },
+    {
+      "timings": {
+        "Fajr": "2026-03-08T06:56:00-04:00",
+        "Sunrise": "2026-03-08T07:22:00-04:00",
+        "Dhuhr": "2026-03-08T13:13:00-04:00",
+        "Asr": "2026-03-08T16:26:00-04:00",
+        "Sunset": "2026-03-08T19:02:00-04:00",
+        "Maghrib": "2026-03-08T19:02:00-04:00",
+        "Isha": "2026-03-08T20:21:00-04:00",
+        "Imsak": "2026-03-08T06:46:00-04:00",
+        "Midnight": "2026-03-09T01:12:00-04:00",
+        "Firstthird": "2026-03-08T23:09:00-04:00",
+        "Lastthird": "2026-03-09T03:16:00-04:00"
+      },
+      "date": {
+        "readable": "08 Mar 2026",
+        "timestamp": "1772964000",
+        "gregorian": {
+          "date": "08-03-2026",
+          "format": "DD-MM-YYYY",
+          "day": "08",
+          "weekday": {"en": "Sunday"},
+          "month": {"number": 3, "en": "March"},
+          "year": "2026",
+          "designation": {"abbreviated": "AD", "expanded": "Anno Domini"}
+        },
+        "hijri": {
+          "date": "19-09-1447",
+          "format": "DD-MM-YYYY",
+          "day": "19",
+          "weekday": {"en": "Al Ahad", "ar": "الاحد"},
+          "month": {"number": 9, "en": "Ramaḍān", "ar": "رَمَضان", "days": 30},
+          "year": "1447",
+          "designation": {"abbreviated": "AH", "expanded": "Anno Hegirae"},
+          "holidays": [],
+          "adjustedHolidays": [],
+          "method": "UAQ"
+        }
+      },
+      "meta": {
+        "latitude": 40.7128,
+        "longitude": -74.006,
+        "timezone": "America/New_York",
+        "method": {
+          "id": 2,
+          "name": "Islamic Society of North America (ISNA)",
+          "params": {"Fajr": 15, "Isha": 15},
+          "location": {"latitude": 39.70421229, "longitude": -86.39943367}
+        },
+        "latitudeAdjustmentMethod": "ANGLE_BASED",
+        "midnightMode": "STANDARD",
+        "school": "STANDARD",
+        "offset": {"Imsak": 0, "Fajr": 0, "Sunrise": 0, "Dhuhr": 0, "Asr": 0, "Sunset": 0, "Maghrib": 0, "Isha": 0, "Midnight": 0}
+      }
+    }
+  ]
+}
