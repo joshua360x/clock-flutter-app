@@ -60,6 +60,19 @@ flutter:
   assets:
     # Offline KJV verses; regenerate with tool/extract_kjv_verses.py.
     - assets/scripture/verses.json
+    # Shown on the licences page (SIL Open Font License 1.1).
+    - assets/fonts/Lora-OFL.txt
+    - assets/fonts/Inter-OFL.txt
+
+  # Unmodified variable fonts from github.com/google/fonts; weights are
+  # selected with FontVariation. Lora is the only serif, for scripture.
+  fonts:
+    - family: Inter
+      fonts:
+        - asset: assets/fonts/Inter-Variable.ttf
+    - family: Lora
+      fonts:
+        - asset: assets/fonts/Lora-Variable.ttf
 
   # To add assets to your application, add an assets section, like this:
   # assets:
