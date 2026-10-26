@@ -60,6 +60,10 @@ flutter:
   assets:
     # Offline KJV verses; regenerate with tool/extract_kjv_verses.py.
     - assets/scripture/verses.json
+    # Alarm audio. bell.ogg is the built-in fallback; drop-in files in
+    # custom/ are picked per prayer (see assets/audio/custom/README.md).
+    - assets/audio/bell.ogg
+    - assets/audio/custom/
     # Shown on the licences page (SIL Open Font License 1.1).
     - assets/fonts/Lora-OFL.txt
     - assets/fonts/Inter-OFL.txt

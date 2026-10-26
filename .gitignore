@@ -43,3 +43,8 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+# Personal alarm audio stays on this machine (may be copyrighted; the repo is
+# public). Only the README describing the naming is tracked.
+/assets/audio/custom/*
+!/assets/audio/custom/README.md

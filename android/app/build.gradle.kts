@@ -43,3 +43,11 @@ android {
 flutter {
     source = "../.."
 }
+
+dependencies {
+    // JVM unit tests for the native scheduler (android/app/src/test), run with
+    // ./gradlew :app:testDebugUnitTest. Both from Maven Central.
+    testImplementation("junit:junit:4.13.2")
+    // Real org.json; the Android stub throws in plain JVM tests.
+    testImplementation("org.json:json:20240303")
+}

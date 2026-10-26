@@ -86,7 +86,7 @@ void main() {
           themeLabel: brightness == Brightness.dark ? 'Dark' : 'Light',
           onToggle: (_, _) {},
           onCycleTheme: () {},
-          onPreviewAlarm: () {},
+          onTestAlarm: () {},
         ),
         brightness,
       );

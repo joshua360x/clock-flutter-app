@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../alarms/alarm_engine.dart';
 import '../../prayer_times/prayer.dart';
 import '../theme/app_colors.dart';
 import '../theme/app_text.dart';
@@ -25,7 +26,8 @@ class AlarmRowData {
 }
 
 /// The five prayer alarms. One row per time, hairline dividers, toggle on
-/// the right; switched-off rows drop to the muted colour.
+/// the right; switched-off rows drop to the muted colour. Anything that
+/// would stop alarms ringing properly is listed above them, plainly.
 class AlarmListScreen extends StatelessWidget {
   const AlarmListScreen({
     super.key,
@@ -34,7 +36,10 @@ class AlarmListScreen extends StatelessWidget {
     required this.themeLabel,
     required this.onToggle,
     required this.onCycleTheme,
-    required this.onPreviewAlarm,
+    required this.onTestAlarm,
+    this.notices = const [],
+    this.onFix,
+    this.testNote,
   });
 
   final List<AlarmRowData> rows;
@@ -45,7 +50,14 @@ class AlarmListScreen extends StatelessWidget {
   final String themeLabel;
   final void Function(Prayer prayer, bool enabled) onToggle;
   final VoidCallback onCycleTheme;
-  final VoidCallback onPreviewAlarm;
+  final VoidCallback onTestAlarm;
+
+  /// Missing permissions/settings, each tappable to fix.
+  final List<ReliabilityItem> notices;
+  final void Function(ReliabilityItem item)? onFix;
+
+  /// Shown under the footer while a test alarm is pending.
+  final String? testNote;
 
   @override
   Widget build(BuildContext context) {
@@ -58,6 +70,10 @@ class AlarmListScreen extends StatelessWidget {
             SectionLabel('Prayer times', color: colors.muted),
             const SizedBox(height: 10),
             Text(sourceLine, style: AppText.small.copyWith(color: colors.muted)),
+            if (notices.isNotEmpty) ...[
+              const SizedBox(height: 16),
+              for (final item in notices) _Notice(item: item, onFix: onFix),
+            ],
             const SizedBox(height: 20),
             for (final (i, row) in rows.indexed) ...[
               if (i > 0) const Divider(),
@@ -71,7 +87,7 @@ class AlarmListScreen extends StatelessWidget {
                 // everything above it; the 48dp target comes from minimumSize.
                 for (final (label, onPressed) in [
                   ('Theme · $themeLabel', onCycleTheme),
-                  ('Preview alarm', onPreviewAlarm),
+                  ('Test alarm', onTestAlarm),
                 ])
                   TextButton(
                     onPressed: onPressed,
@@ -83,7 +99,45 @@ class AlarmListScreen extends StatelessWidget {
                   ),
               ],
             ),
+            if (testNote != null)
+              Text(testNote!, style: AppText.small.copyWith(color: colors.muted)),
           ],
+        ),
+      ),
+    );
+  }
+}
+
+/// A missing permission: what to allow, and why, in plain text.
+class _Notice extends StatelessWidget {
+  const _Notice({required this.item, required this.onFix});
+
+  final ReliabilityItem item;
+  final void Function(ReliabilityItem item)? onFix;
+
+  @override
+  Widget build(BuildContext context) {
+    final colors = AppColors.of(context);
+    return InkWell(
+      onTap: onFix == null ? null : () => onFix!(item),
+      child: ConstrainedBox(
+        constraints: const BoxConstraints(minHeight: Insets.minTarget),
+        child: Padding(
+          padding: const EdgeInsets.symmetric(vertical: 8),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                item.title,
+                style: AppText.body.copyWith(
+                  color: colors.text,
+                  decoration: TextDecoration.underline,
+                  decorationColor: colors.muted,
+                ),
+              ),
+              Text(item.detail, style: AppText.small.copyWith(color: colors.muted)),
+            ],
+          ),
         ),
       ),
     );

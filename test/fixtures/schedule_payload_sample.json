@@ -1,0 +1,73 @@
+{
+  "version": 1,
+  "snoozeMinutes": 10,
+  "ringTimeoutMinutes": 10,
+  "fallbackSound": {"kind": "asset", "path": "assets/audio/bell.ogg"},
+  "alarms": [
+    {
+      "id": 1,
+      "key": "fajr",
+      "label": "Fajr",
+      "enabled": true,
+      "instants": [
+        1793007720000,
+        1793094180000
+      ],
+      "fallback": "05:43",
+      "zone": "America/New_York",
+      "sound": {"kind": "asset", "path": "assets/audio/custom/default.mp3"}
+    },
+    {
+      "id": 2,
+      "key": "dhuhr",
+      "label": "Dhuhr",
+      "enabled": false,
+      "instants": [
+        1793033160000,
+        1793119560000
+      ],
+      "fallback": "12:46",
+      "zone": "America/New_York",
+      "sound": {"kind": "asset", "path": "assets/audio/custom/default.mp3"}
+    },
+    {
+      "id": 3,
+      "key": "asr",
+      "label": "Asr",
+      "enabled": true,
+      "instants": [
+        1793044080000,
+        1793130420000
+      ],
+      "fallback": "15:47",
+      "zone": "America/New_York",
+      "sound": {"kind": "asset", "path": "assets/audio/custom/default.mp3"}
+    },
+    {
+      "id": 4,
+      "key": "maghrib",
+      "label": "Maghrib",
+      "enabled": true,
+      "instants": [
+        1793052420000,
+        1793138760000
+      ],
+      "fallback": "18:06",
+      "zone": "America/New_York",
+      "sound": {"kind": "asset", "path": "assets/audio/custom/default.mp3"}
+    },
+    {
+      "id": 5,
+      "key": "isha",
+      "label": "Isha",
+      "enabled": true,
+      "instants": [
+        1793056980000,
+        1793143320000
+      ],
+      "fallback": "19:22",
+      "zone": "America/New_York",
+      "sound": {"kind": "asset", "path": "assets/audio/custom/default.mp3"}
+    }
+  ]
+}

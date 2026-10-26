@@ -22,7 +22,7 @@ void main() {
       themeLabel: 'Dark',
       onToggle: (p, on) => toggles.add((p, on)),
       onCycleTheme: () {},
-      onPreviewAlarm: () {},
+      onTestAlarm: () {},
     ),
     brightness: brightness,
     use24h: use24h,
